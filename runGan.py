@@ -128,7 +128,7 @@ elif( runcase == 3 ): # Train TecoGAN
     if(not os.path.exists(FRVSRModel+".data-00000-of-00001")):
         # Download our pre-trained FRVSR model
         print("pre-trained FRVSR model not found, downloading")
-        cmd0 = "wget http://ge.in.tum.de/download/2019-TecoGAN/FRVSR_Ours.zip -O model/ofrvsr.zip;"
+        cmd0 = "wget https://github.com/maulvi/TecoGAN-repo/releases/download/v1.0/FRVSR_Ours.zip -O model/ofrvsr.zip;"
         cmd0 += "unzip model/ofrvsr.zip -d model; rm model/ofrvsr.zip"
         subprocess.call(cmd0, shell=True)
     
