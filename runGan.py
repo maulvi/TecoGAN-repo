@@ -41,7 +41,7 @@ def folder_check(path):
 if( runcase == 0 ): # download inference data, trained models
     # download the trained model
     if(not os.path.exists("./model/")): os.mkdir("./model/")
-    cmd1 = "wgeth https://github.com/maulvi/TecoGAN-repo/releases/download/v1.0/model.zip -O model/model.zip;"
+    cmd1 = "wget https://github.com/maulvi/TecoGAN-repo/releases/download/v1.0/model.zip -O model/model.zip;"
     cmd1 += "unzip model/model.zip -d model; rm model/model.zip"
     subprocess.call(cmd1, shell=True)
     
